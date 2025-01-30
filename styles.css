@@ -1,0 +1,53 @@
+body {
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.custom-thumbnail {
+    height: 180px; /* Ajusta la altura de la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6c757d; /* Fondo gris por si la imagen no carga */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+    overflow: hidden; /* Para que la imagen no se salga del contenedor */
+}
+
+.custom-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    color: #555; /* Color de texto más suave */
+}
+
+.btn-group .btn {
+    border-radius: 20px; /* Botones redondeados */
+    margin: 2px;
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+}
